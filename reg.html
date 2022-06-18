@@ -1,0 +1,124 @@
+<?php include 'mail.php;?>
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="form.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+    <div class="container">
+        <header>24x7 Online Vet Consultation & Home Visits<br>
+          Your pet deserves only the best</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name"  name="name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Appointment Date</label>
+                            <input type="date"  name="appointment" min="2022-04-06" placeholder="Enter appointment date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="phonenumber" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Enter your package</label>
+                            <select required>
+                                <option disabled selected>Select package</option>
+                                <option>Online Vet<br>
+                                  Starting ₹149<br>
+                                  Call/Video Consultancy<br>
+                                </option>
+                                <option>Essential Care<br>
+                                  Starting ₹499<br>
+                                  Call/Video Consultancy<br>
+                                  220 minutes/months</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your ccupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>State*</label>
+                            <input type="text" placeholder="Enter your state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City*</label>
+                            <input type="text" placeholder="Enter your City" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address</label>
+                            <textarea name="" placeholder="Type your Address here" id="" cols="10" rows="2"></textarea>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Your Pet's Medical Problem*
+                            </label>
+                            <textarea name="" placeholder="your message" id="" cols="40" rows="4"></textarea>
+
+                        </div>
+                        <div>
+                            <p class="success"> <?php echo $success; ?></p>
+                            <p class="failed"> <?php echo $failed; ?></p>
+                        </div>
+
+                        
+                        
+
+                    <button class="nextBtn">
+                        <span class="btnText">Start a Consultation</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            
+
+               
+
+    <!--<script src="script.js"></script>-->
+    <script>
+        var date= new Date();
+        var tdate= date.getDate();
+        var month=date.getMonth();
+        console.log(month);
+    </script>
+</body>
+</html>
